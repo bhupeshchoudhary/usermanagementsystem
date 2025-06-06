@@ -38,13 +38,13 @@ export default function SignInPage() {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <div className="flex justify-center mb-4">
-      <Image
+           <Image
         src="/assets/LW@4x1.png" // Update this to the correct path for your logo
         alt="LinuxWorld Logo"
         width={42}
-        height={52}
+        height={48}
       />
-    </div>
+          </div>
           <CardTitle className="text-2xl">Welcome to LinuxWorld</CardTitle>
           <CardDescription>Sign in to your LinuxWorld classroom account</CardDescription>
         </CardHeader>
@@ -78,6 +78,12 @@ export default function SignInPage() {
                 required
                 placeholder="Enter your password"
               />
+            </div>
+
+            <div className="flex justify-end">
+              <Link href="/forgot-password" className="text-sm text-primary hover:underline">
+                Forgot Password?
+              </Link>
             </div>
 
             <Button type="submit" className="w-full" disabled={authLoading}>
